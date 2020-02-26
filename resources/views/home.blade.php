@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    <B>SELAMAT DATANG</B>
+                    SELAMAT/SUKSES
                 </div>
             </div>
         </div>

@@ -89,3 +89,24 @@ Route::get('latihan-eloquent',function()
     $mahasiswa = Mahasiswa::with('wali','dosen','hobi')->get()->take(1);
     return view('eloquent',compact('mahasiswa'));
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('beranda', function()
+{
+    return view('beranda');
+});
+
+Route::get('tentang', function()
+{
+    return view('tentang');
+});
+
+Route::get('kontak', function()
+{
+    return view('kontak');
+});
+
+Route::resource('dosen','DosenController');
