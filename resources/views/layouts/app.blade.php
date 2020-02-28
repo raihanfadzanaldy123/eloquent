@@ -38,6 +38,14 @@
                             <li class="nav-item">
                             <a href="{{route('dosen.index')}}" class="nav-link"> <b>Dosen</b></a>
                             </li>
+
+                            <li class="nav-item">
+                            <a href="{{route('hobi.index')}}" class="nav-link"> <b>Hobi</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a href="{{route('mahasiswa.index')}}" class="nav-link"> <b>Mahasiswa</b></a>
+                            </li>
                         @endguest
                     </ul>
 

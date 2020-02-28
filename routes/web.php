@@ -92,6 +92,7 @@ Route::get('latihan-eloquent',function()
 
 Auth::routes();
 
+// Dosen
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('beranda', function()
@@ -109,4 +110,7 @@ Route::get('kontak', function()
     return view('kontak');
 });
 
+
 Route::resource('dosen','DosenController');
+Route::resource('hobi','HobiController');
+Route::resource('mahasiswa','MahasiswaController');
